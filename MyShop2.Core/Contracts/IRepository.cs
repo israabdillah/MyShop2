@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using MyShop2.Core.Models;
 
-namespace MyShop2.DataAccess.InMemory
+namespace MyShop2.Core.Contracts
 {
 	public interface IRepository<T> where T : BaseEntity
 	{

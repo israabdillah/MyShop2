@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MyShop2.Core.Contracts;
 using MyShop2.Core.Models;
 using MyShop2.Core.ViewModels;
 using MyShop2.DataAccess.InMemory;
@@ -49,7 +50,6 @@ namespace MyShop2.WebUI.Controllers
 					product.Image = product.Id + Path.GetExtension(file.FileName);
 					file.SaveAs(Server.MapPath("//Content//ProductImages//") + product.Image);
 				}
-
 				context.Insert(product);
 				context.Commit();
 

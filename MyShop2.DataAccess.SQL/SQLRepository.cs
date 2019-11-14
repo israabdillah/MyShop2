@@ -4,8 +4,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyShop2.Core.Contracts;
 using MyShop2.Core.Models;
-using MyShop2.DataAccess.InMemory;
 
 namespace MyShop2.DataAccess.SQL
 {
@@ -22,7 +22,7 @@ namespace MyShop2.DataAccess.SQL
 		public IQueryable<T> Collection()
 		{
 			return dbSet;
-		}
+		}	
 
 		public void Commit()
 		{

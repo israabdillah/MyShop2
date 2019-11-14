@@ -40,6 +40,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,9 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
-    <Compile Include="Migrations\201911070648173_BaseProjectBuild.cs" />
-    <Compile Include="Migrations\201911070648173_BaseProjectBuild.Designer.cs">
-      <DependentUpon>201911070648173_BaseProjectBuild.cs</DependentUpon>
+    <Compile Include="Migrations\201911140429056_DataTable.cs" />
+    <Compile Include="Migrations\201911140429056_DataTable.Designer.cs">
+      <DependentUpon>201911140429056_DataTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,14 +67,18 @@
       <Project>{FFEB6D08-CF03-405C-BF82-2F53D3698554}</Project>
       <Name>MyShop2.DataAccess.InMemory</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MyShop2.Services\MyShop2.Services.csproj">
+      <Project>{409d4347-689f-49cd-870d-74d8b9a0daaf}</Project>
+      <Name>MyShop2.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911070648173_BaseProjectBuild.resx">
-      <DependentUpon>201911070648173_BaseProjectBuild.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911140429056_DataTable.resx">
+      <DependentUpon>201911140429056_DataTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

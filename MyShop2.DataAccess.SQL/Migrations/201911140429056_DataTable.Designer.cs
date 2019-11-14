@@ -7,13 +7,13 @@ namespace MyShop2.DataAccess.SQL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class BaseProjectBuild : IMigrationMetadata
+    public sealed partial class DataTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(BaseProjectBuild));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(DataTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201911070648173_BaseProjectBuild"; }
+            get { return "201911140429056_DataTable"; }
         }
         
         string IMigrationMetadata.Source

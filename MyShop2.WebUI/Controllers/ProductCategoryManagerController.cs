@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using MyShop2.Core.Contracts;
 using MyShop2.Core.Models;
 using MyShop2.DataAccess.InMemory;
 

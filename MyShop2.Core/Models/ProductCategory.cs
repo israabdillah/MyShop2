@@ -8,6 +8,6 @@ namespace MyShop2.Core.Models
 {
 	public class ProductCategory : BaseEntity
 	{
-		public string Category { get; set; }
+		public string Category { get; set; }	
 	}
 }

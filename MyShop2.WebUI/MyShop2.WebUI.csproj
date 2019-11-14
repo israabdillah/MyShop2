@@ -48,6 +48,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
@@ -188,8 +189,11 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\BasketController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OrderManagerController.cs" />
     <Compile Include="Controllers\ProductCategoryManagerController.cs" />
     <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
@@ -265,9 +269,17 @@
     <Content Include="Views\ProductManager\Create.cshtml" />
     <Content Include="Views\ProductManager\Edit.cshtml" />
     <Content Include="Views\ProductManager\Delete.cshtml" />
+    <Content Include="Views\Basket\BasketSummary.cshtml" />
+    <Content Include="Views\Basket\Checkout.cshtml" />
+    <Content Include="Views\Basket\Thankyou.cshtml" />
+    <Content Include="Views\Basket\Index.cshtml" />
+    <Content Include="Views\Basket\RemoveFromBasket.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\ProductImages\" />
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Views\OrderManager\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
